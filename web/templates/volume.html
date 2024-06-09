@@ -1,0 +1,30 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container">
+  <br />
+  <h2>Master Vol: {{vol_text}}</h2>
+  <br />
+  <div class="d-grid gap-2">
+    <button
+      type="button"
+      class="btn btn-success btn-lg"
+      onclick="location.href='/api/master-volume/up'"
+    >
+      + Vol Up +</button
+    ><br />
+    <button
+      type="button"
+      class="btn btn-danger btn-lg"
+      onclick="location.href='/api/master-volume/down'"
+    >
+      - Vol Down -</button
+    ><br /><br />
+    <button
+      type="button"
+      class="btn btn-dark btn-lg"
+      onclick="location.href='/api/master-volume/down'"
+    >
+      Mute (Vol.0)
+    </button>
+  </div>
+</div>
+{% endblock %}

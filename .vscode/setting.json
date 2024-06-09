@@ -1,0 +1,4 @@
+{
+  "autopep8.args": ["--ignore", "E402"],
+  "python.formatting.autopep8Args": ["--ignore", "E402"]
+}
